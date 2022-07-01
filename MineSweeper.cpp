@@ -1,7 +1,7 @@
 #include "MineSweeper.h"
 
 wxIMPLEMENT_APP(MineSweeper);
-
+//frame
 	MineSweeper::MineSweeper()
 	{
 
@@ -12,6 +12,7 @@ wxIMPLEMENT_APP(MineSweeper);
 
 
 	}
+//this shows the window
 	bool MineSweeper::OnInit() 
 	{
 		m_form1 = new TheMainMineSweeper();

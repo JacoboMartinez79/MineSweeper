@@ -12,4 +12,4 @@ class MineSweeper : public wxApp
 
 	public:
 		virtual bool OnInit();
-	};
+};

@@ -4,7 +4,7 @@ wxBEGIN_EVENT_TABLE(TheMainMineSweeper, wxFrame)
      EVT_BUTTON(10001, OnButtonClicked)
 wxEND_EVENT_TABLE()
 
-TheMainMineSweeper::TheMainMineSweeper() : wxFrame(nullptr, wxID_ANY, "title", wxPoint(400, 200), wxSize(500, 500))
+TheMainMineSweeper::TheMainMineSweeper() : wxFrame(nullptr, wxID_ANY, "MineSweeper", wxPoint(400, 200), wxSize(500, 500))
 {
 	btn = new wxButton* [nFieldWidth * nFieldHeight];
 	wxGridSizer* grid = new wxGridSizer(nFieldWidth, nFieldHeight, 0, 0);
@@ -12,7 +12,6 @@ TheMainMineSweeper::TheMainMineSweeper() : wxFrame(nullptr, wxID_ANY, "title", w
 	nField = new int[nFieldWidth * nFieldHeight];
 
 	wxFont font(24, wxFONTFAMILY_DEFAULT, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_BOLD, false);
-
 
 	for (int x = 0;  x < nFieldWidth;  x++)
 	{
